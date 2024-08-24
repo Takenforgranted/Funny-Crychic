@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Pacifico", cursive;
+  height: 100%; /* 确保html和body占据整个视口 */
+}
+
+.signature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置容器高度为视口高度 */
+  background-color: #9b9b8b;
+}
+
+.signature-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature-line {
+  display: inline-block; /* 使span在行内显示，但允许设置宽度和高度 */
+  margin: 0 auto; /* 上下边距为0，左右自动（水平居中） */
+  color: #ffdd88;
+  text-align: center;
+  line-height: 1.4;
+  /*white-space: pre; /* 防止自动换行 */
+  cursor: pointer; /* 更改鼠标指针样式 */
+  text-decoration: none; /* 移除下划线 */
+  transition: color 0.3s ease; /* 平滑过渡颜色变化 */
+}
+
+.signature-line:first-child {
+  font-size: 5rem; /* 增大字体大小 */
+}
+
+.signature-line:last-child {
+  font-size: 3rem; /* 增大字体大小 */
+}
